@@ -9,59 +9,30 @@ namespace Lab_3._2_Shopping_List
         static void Main(string[] args)
         {
 
-            /*          
-            Dictionary<string, double> menuData = new Dictionary<string, double>();
-            menuData["Tent"] = 99.99;
-            menuData["Sleeping Bag"] = 74.99;
-            menuData["Air Matress"] = 35.95;
-            menuData["Matches"] = 15.45;
-            menuData["Hatchet"] = 12.75;
-            menuData["Fishing Pole"] = 22.53;
-            menuData["Flash Light"] = 26.92;
-            menuData["Whisky"] = 54.99;
-
+            bool continueShopping = true; // flag to keep shopping
             
-            purchaseItems.Add("Tent");
-            purchaseItems.Add("Sleep Bag");
-            purchaseItems.Add("Air Matress");
-            purchaseItems.Add("Matches");
-            purchaseItems.Add("Hatchet");
-            purchaseItems.Add("Fishing Pole");
-            purchaseItems.Add("Flash Light");
-            purchaseItems.Add("Whisky");
-
-            itemPrice.Add(99.99);
-            itemPrice.Add(74.99);
-            itemPrice.Add(35.95);
-            itemPrice.Add(15.45);
-            itemPrice.Add(12.75);
-            itemPrice.Add(22.53);
-            itemPrice.Add(26.92);
-            itemPrice.Add(54.99);
-            */
-
-            bool continueShopping = true;
-            
-            ArrayList purchaseItems = new ArrayList();
-            ArrayList itemPrice = new ArrayList();
+            ArrayList purchaseItems = new ArrayList(); //Array list to hole items
+            ArrayList itemPrice = new ArrayList(); //array lit to hole prices
 
             Console.WriteLine("Welcome to Cobalt's Camping Supplies!");
             Console.WriteLine();
 
             while (continueShopping)
             {
-                CallMenu();
+                CallMenu(); // Calls method that displays the menu
 
                 Console.WriteLine();
                 Console.Write("What item would you like to order?:");
                 string order = Console.ReadLine();
 
+                
+                //Switch Statement to check for a valid inut, if an item is selected that does not exist, the program aks if you want to keep shopping
                 if (order == "Tent" || order == "Sleeping Bag" || order == "Air Matress" || order == "Matches" || order == "Hatchet" || order == "Fishing Pole" || order == "Flash Light" || order == "Whisky")
                 {
                     switch (order)
                     {
                         case "Tent":
-                            if (!purchaseItems.Contains("Tent"))
+                            if (!purchaseItems.Contains("Tent")) // if the Array does not contain tent, it adds it to the array, and adds the price to the price array
                             {
                                 purchaseItems.Add("Tent");
                                 itemPrice.Add(99.99);
@@ -131,11 +102,11 @@ namespace Lab_3._2_Shopping_List
                 else
                 {
 
-                    Console.WriteLine("Please pick a item we carry!");
+                    Console.WriteLine("Please pick a item we carry!"); // checks against availible items
                     Console.WriteLine();
                 }
                 Console.WriteLine();
-                Console.Write("Would you like to continue shopping? (y/n):");
+                Console.Write("Would you like to continue shopping? (y/n):"); // breaks if user does not want to keep shopping
                 string keepShopping = Console.ReadLine();
                 string upperShopping = keepShopping.ToUpper();
                 
@@ -147,12 +118,12 @@ namespace Lab_3._2_Shopping_List
                     Console.WriteLine("Here is what you got:");
                     Console.WriteLine("===============================");
 
-                    double sum = 0;
-                    double average = 0;
+                    //double sum = 0;    Could not think of a way to extract the doubles from the price Array list, and calculate the sun and average
+                    //double average = 0;  
 
                     for (int i = 0; i<purchaseItems.Count; i++)
                     {
-                        Console.WriteLine($"{purchaseItems[i]}${itemPrice[i]}");
+                        Console.WriteLine($"{purchaseItems[i]}${itemPrice[i]}"); // displays items added to the cart.
                     }
 
                   
@@ -162,7 +133,7 @@ namespace Lab_3._2_Shopping_List
                 }
                 else if(upperShopping != "Y")
                 {
-                    Console.WriteLine("Please make a valid choice. You can continue shopping.");
+                    Console.WriteLine("Please make a valid choice. You can continue shopping."); // checks for valid continue shopping, and defaults to continue shopping if a invalid choice is made
                     Console.WriteLine("Press any key to continue.");
                     Console.ReadLine();
                     Console.Clear();
@@ -173,7 +144,7 @@ namespace Lab_3._2_Shopping_List
             
             
 
-        private static void CallMenu()
+        private static void CallMenu() // Metod Created to cut down on redundent code
         {
 
             Dictionary<string, double> items = new Dictionary<string, double>();
