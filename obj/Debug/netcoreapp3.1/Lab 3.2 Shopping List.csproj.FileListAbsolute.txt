@@ -1,0 +1,13 @@
+C:\devbuild4\Lab 3.2 Shopping List\bin\Debug\netcoreapp3.1\Lab 3.2 Shopping List.exe
+C:\devbuild4\Lab 3.2 Shopping List\bin\Debug\netcoreapp3.1\Lab 3.2 Shopping List.deps.json
+C:\devbuild4\Lab 3.2 Shopping List\bin\Debug\netcoreapp3.1\Lab 3.2 Shopping List.runtimeconfig.json
+C:\devbuild4\Lab 3.2 Shopping List\bin\Debug\netcoreapp3.1\Lab 3.2 Shopping List.runtimeconfig.dev.json
+C:\devbuild4\Lab 3.2 Shopping List\bin\Debug\netcoreapp3.1\Lab 3.2 Shopping List.dll
+C:\devbuild4\Lab 3.2 Shopping List\bin\Debug\netcoreapp3.1\Lab 3.2 Shopping List.pdb
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.csprojAssemblyReference.cache
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.AssemblyInfoInputs.cache
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.AssemblyInfo.cs
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.csproj.CoreCompileInputs.cache
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.dll
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.pdb
+C:\devbuild4\Lab 3.2 Shopping List\obj\Debug\netcoreapp3.1\Lab 3.2 Shopping List.genruntimeconfig.cache
